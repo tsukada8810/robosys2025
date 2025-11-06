@@ -1,5 +1,8 @@
 # robosys2025
 ロボットシステム学課題１
+
+# plusコマンド
+![test](https://github.com/tsukada8810/robosys2025/actions/workflows/test.yml/badge.svg)
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，Ryuichi Ueda由来のコード（© 2025 Ryuichi Ueda）を利用しています．
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
