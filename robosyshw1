@@ -1,0 +1,37 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Hayato Tsukada
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import itertools
+
+def maketen(nums):
+    ops = ['+', '-', '*', '/']
+
+    for a, b, c, d in itertools.permutations(nums):
+        for x, y, z in itertools.product(ops, repeat=3):
+            form = [
+                f"(({a}{x}{b}){y}{c}){z}{d}",
+                f"({a}{x}{b}){y}({c}{z}{d})"
+            ]    
+            for expr in form:
+                try:
+                    val = eval(expr)
+                    if abs(val - 10) < 0.001:
+                        return f"{expr} = 10"
+                except ZeroDivisionError:
+                    continue
+    return None
+
+def main():
+    nums = list(map(int, sys.stdin.read().split()))
+    ans = maketen(nums)
+
+    if ans:
+        print(ans, file=sys.stderr)
+    else:
+        print("no answer", file=sys.stderr)
+
+if __name__ == "__main__":
+    main()
+
