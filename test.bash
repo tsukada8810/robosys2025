@@ -9,9 +9,11 @@ ng () {
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
+out=$(echo 1 2 3 4 | ./robosyshw1 2>&1)
+[ "${out}" = "((1+2)+3)+4 = 10" ] || ng "$LINENO"
 
+out=$(echo 1 1 1 1 | ./robosyshw1 2>&1)
+[ "${out}" = "no answer" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
 exit $res
