@@ -18,15 +18,19 @@
 $ git clone [https://github.com/tsukada8810/robosys2025.git](https://github.com/tsukada8810/robosys2025.git)
 $ cd robosys2025
 $ chmod +x robosyshw1 
-
+```
 ## 使用方法
 - 'echo' コマンドで数値を入力すると、計算結果を出力する。
 - このとき、数値と数値の間にはスペースを空ける。
 ### 例1 解が10になる計算式が存在するとき
+```bash
 $ echo 1 2 3 4 | robosyshw1
+```
 ((1+2)+3)+4 = 10
 ### 例2 解が10なる計算式が存在しないとき
+```bash
 $ echo 1 1 1 1 | robosyshw1
+```
 no answer
 
 ## テスト
