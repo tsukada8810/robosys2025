@@ -16,7 +16,11 @@
 以下のコマンドを実行してリポジトリをクローンし、ディレクトリに移動して実行権限を付与する。
 ```bash
 $ git clone [https://github.com/tsukada8810/robosys2025.git](https://github.com/tsukada8810/robosys2025.git)
+```
+```bash
 $ cd robosys2025
+```
+```bash
 $ chmod +x robosyshw1 
 ```
 ## 使用方法
