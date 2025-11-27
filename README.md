@@ -13,20 +13,20 @@
 - Python 3.7 ~ 3.10 (テスト済み)
 
 ## インストール方法
-以下のリポジトリをクローンし、そのディレクトリに移動する
+以下のコマンドを実行してリポジトリをクローンし、ディレクトリに移動して実行権限を付与する。
+'''bash
 $ git clone [https://github.com/tsukada8810/robosys2025.git](https://github.com/tsukada8810/robosys2025.git)
 $ cd robosys2025
-スクリプトに実行権限を付与する
 $ chmod +x robosyshw1 
 
 ## 使用方法
 - 'echo' コマンドで数値を入力すると、計算結果を出力する。
-- このとき、数値と数値の間にはスペースを空ける
-# 例1 解が10になる計算式が存在するとき
-$ echo 1 2 3 4 | robosyshw1
+- このとき、数値と数値の間にはスペースを空ける。
+### 例1 解が10になる計算式が存在するとき
+$ echo &quot;1 2 3 4 | robosyshw1<&quot
 ((1+2)+3)+4 = 10
-# 例2 解が10なる計算式が存在しないとき
-$ echo 1 1 1 1 | robosyshw1
+### 例2 解が10なる計算式が存在しないとき
+$ echo &quot;1 1 1 1 | robosyshw1<&quot
 no answer
 
 ## テスト
