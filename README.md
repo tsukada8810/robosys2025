@@ -14,7 +14,7 @@
 
 ## インストール方法
 以下のコマンドを実行してリポジトリをクローンし、ディレクトリに移動して実行権限を付与する。
-'''bash
+```bash
 $ git clone [https://github.com/tsukada8810/robosys2025.git](https://github.com/tsukada8810/robosys2025.git)
 $ cd robosys2025
 $ chmod +x robosyshw1 
@@ -23,10 +23,10 @@ $ chmod +x robosyshw1
 - 'echo' コマンドで数値を入力すると、計算結果を出力する。
 - このとき、数値と数値の間にはスペースを空ける。
 ### 例1 解が10になる計算式が存在するとき
-$ echo &quot;1 2 3 4 | robosyshw1<&quot
+$ echo 1 2 3 4 | robosyshw1
 ((1+2)+3)+4 = 10
 ### 例2 解が10なる計算式が存在しないとき
-$ echo &quot;1 1 1 1 | robosyshw1<&quot
+$ echo 1 1 1 1 | robosyshw1
 no answer
 
 ## テスト
