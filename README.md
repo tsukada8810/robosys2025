@@ -34,7 +34,7 @@ $ echo 1 2 3 4 | ./robosyshw1
 ```bash
 $ echo 4 6 3 7 | ./robosyshw1
 ```
-(4*7)-(3*6) = 10
+(4×7)-(3×6) = 10
 ### 例2 解が10なる計算式が存在しないとき
 ```bash
 $ echo 1 1 1 1 | ./robosyshw1
