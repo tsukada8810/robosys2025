@@ -1,8 +1,38 @@
 # robosys2025
 ロボットシステム学課題１
 
-# plusコマンド
+# テンパズルコマンド
 ![test](https://github.com/tsukada8810/robosys2025/actions/workflows/test.yml/badge.svg)
+
+標準入力から4つの数字を受け取り、加減乗除を使って計算結果が10になる計算式を出力するコマンドです。
+
+## 実行環境
+- Ubuntu 24.04
+
+## 必要なソフトウェア
+- Python 3.7 ~ 3.10 (テスト済み)
+
+## インストール方法
+以下のリポジトリをクローンし、そのディレクトリに移動する
+$ git clone [https://github.com/tsukada8810/robosys2025.git](https://github.com/tsukada8810/robosys2025.git)
+$ cd robosys2025
+スクリプトに実行権限を付与する
+$ chmod +x robosyshw1 
+
+## 使用方法
+- 'echo' コマンドで数値を入力すると、計算結果を出力する。
+- このとき、数値と数値の間にはスペースを空ける
+# 例1 解が10になる計算式が存在するとき
+$ echo 1 2 3 4 | robosyshw1
+((1+2)+3)+4 = 10
+# 例2 解が10なる計算式が存在しないとき
+$ echo 1 1 1 1 | robosyshw1
+no answer
+
+## テスト
+テストするには以下のコマンドを実行する
+$ ./test.bash
+
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，Ryuichi Ueda由来のコード（© 2025 Ryuichi Ueda）を利用しています．
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
