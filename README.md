@@ -28,12 +28,12 @@ $ chmod +x robosyshw1
 - このとき、数値と数値の間にはスペースを空ける。
 ### 例1 解が10になる計算式が存在するとき
 ```bash
-$ echo 1 2 3 4 | robosyshw1
+$ echo 1 2 3 4 | ./robosyshw1
 ```
 ((1+2)+3)+4 = 10
 ### 例2 解が10なる計算式が存在しないとき
 ```bash
-$ echo 1 1 1 1 | robosyshw1
+$ echo 1 1 1 1 | ./robosyshw1
 ```
 no answer
 
