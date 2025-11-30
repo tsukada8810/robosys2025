@@ -15,7 +15,7 @@
 ## インストール方法
 以下のコマンドを実行してリポジトリをクローンし、ディレクトリに移動して実行権限を付与する
 ```bash
-$ git clone git@github.com:tsukada8810/robosys2025.git
+$ git clone https://github.com/tsukada8810/robosys2025.git
 ```
 ```bash
 $ cd robosys2025
