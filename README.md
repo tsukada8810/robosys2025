@@ -29,16 +29,16 @@ $ chmod +x robosyshw1
 ## 実行結果
 #### パターン1 結果がが10になる計算式が存在するとき
 ```bash
-$ echo 1 2 3 4 | ./robosyshw1
+$ echo "1 2 3 4" | ./robosyshw1
 ```
 ((1+2)+3)+4 = 10
 ```bash
-$ echo 4 6 3 7 | ./robosyshw1
+$ echo "4 6 3 7" | ./robosyshw1
 ```
 (4\*7)-(3\*6) = 10
 #### パターン2 結果が10になる計算式が存在しないとき
 ```bash
-$ echo 1 1 1 1 | ./robosyshw1
+$ echo "1 1 1 1" | ./robosyshw1
 ```
 no answer
 ## 参考文献
