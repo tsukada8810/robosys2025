@@ -42,7 +42,7 @@ $ echo 1 1 1 1 | ./robosyshw1
 ```
 no answer
 ## 参考文献
-https://qiita.com/kochige/items/b33e72093dd500814af09
+https://qiita.com/kochige/items/b33e72093dd500814af0
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，Ryuichi Ueda由来のコード（© 2025 Ryuichi Ueda）を利用しています．
