@@ -26,7 +26,7 @@ def main():
     nums = list(map(int, sys.stdin.read().split()))
     ans = maketen(nums)
     if ans:
-        print(ans, file=sys.stderr)
+        print(ans)
     else:
         print("no answer", file=sys.stderr)
 
