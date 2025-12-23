@@ -37,8 +37,8 @@ no answer
 ```
 
 ## 参考文献
-https://qiita.com/kochige/items/b33e72093dd500814af0
-https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025
+- https://qiita.com/kochige/items/b33e72093dd500814af0
+- https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - © 2025 Hayato Tsukada
