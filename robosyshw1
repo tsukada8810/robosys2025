@@ -23,12 +23,23 @@ def maketen(nums):
     return None
 
 def main():
-    nums = list(map(int, sys.stdin.read().split()))
+    if len(sys.argv) == 5:
+        nums = [int(x) for x in sys.argv[1:]]
+    else:
+        try:
+            nums = [int(x) for x in sys.stdin.read().split()]
+        except ValueError:
+            nums = []
+    if len(nums) != 4:
+        print("input 4 numbers", file=sys.stderr)
+        sys.exit(1)
     ans = maketen(nums)
     if ans:
         print(ans)
+        sys.exit(0)
     else:
         print("no answer", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
